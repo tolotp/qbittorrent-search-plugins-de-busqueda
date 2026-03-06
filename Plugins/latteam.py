@@ -19,7 +19,8 @@ USER_HOME = os.path.expanduser("~")
 CONFIG_FILE = os.path.join(USER_HOME, "latteam_config.ini")
 
 def get_cookie():
-    config = configparser.ConfigParser()
+    # AGREGAMOS interpolation=None PARA QUE LOS '%' DE LA COOKIE NO CRASHEEN EL SCRIPT
+    config = configparser.ConfigParser(interpolation=None)
     
     # Si el archivo NO existe, lo creamos con el campo de cookie vacío
     if not os.path.exists(CONFIG_FILE):
