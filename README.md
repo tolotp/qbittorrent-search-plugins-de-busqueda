@@ -13,9 +13,9 @@ Para instalar estos plugins tienes 2 opciones, puedes hacerlo copiando la url de
 Para instalar un plugin correctamente lee esta >>guía<< si no sabes como hacerlo.
 
 | Sitios/Trackers | Versión | Última actualización | Descarga | Comentarios |
-| :--- | :---: | :---: | :---: | :--- |
-| <img src="https://www.google.com/s2/favicons?domain=torrent.unionfansub.com" width="16" height="16"> [Unión Fansub](https://torrent.unionfansub.com/) | 2.0 | 05/Mar/2026 | [📥](#) | ✔️ qbt 4.2.x+ / python 3.x.x <br> **Nota:** Crea un archivo `.ini` en tu carpeta personal para el Login / Lee esta guia para que lo configures correctamente. |
-| <img src="https://www.google.com/s2/favicons?domain=lat-team.com" width="16" height="16"> [Lat-Team](https://lat-team.com/) | 1.0 | 05/Mar/2026 | [📥](#) | ✔️ qbt 4.2.x+ / python 3.x.x <br> **Nota:** Crea un archivo `.ini` en tu carpeta personal para pegar la Cookie / Lee esta guia para que lo configures correctamente. |
+| :--- | :---: | :---: | :---: | :---: |
+| <img src="https://www.google.com/s2/favicons?domain=torrent.unionfansub.com" width="16" height="16"> [Unión&nbsp;Fansub](https://torrent.unionfansub.com/) | 2.0 | 05/Mar/2026 | [📥](#) | ✔️ qbt 4.2.x+ / python 3.x.x <br> **Nota:** Crea un archivo `.ini` en tu carpeta personal para el Login / Lee esta guía para que lo configures correctamente. |
+| <img src="https://www.google.com/s2/favicons?domain=lat-team.com" width="16" height="16"> [Lat-Team](https://lat-team.com/) | 1.0 | 05/Mar/2026 | [📥](#) | ✔️ qbt 4.2.x+ / python 3.x.x <br> **Nota:** Crea un archivo `.ini` en tu carpeta personal para pegar la Cookie / Lee esta guía para que lo configures correctamente. |
 | <img src="https://www.google.com/s2/favicons?domain=uindex.org" width="16" height="16"> [Uindex](https://uindex.org/) | 1.0 | 05/Mar/2026 | [📥](#) | ✔️ qbt 4.2.x+ / python 3.x.x <br> **Nota:** Instalación normal, no requiere configuración extra. |
 
 
