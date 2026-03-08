@@ -1,12 +1,10 @@
 <h1 align="center">IMPORTANTE: LEER</h1>
 
-Para usar estos plugins tienes que tener instalado Python en tu PC, te recomiendo la version 3.13.x puede ser cualquiera de esa versión, ejemplo 3.13.1 / 3.13.2, etc, lo descargas e instalas. Si ya tienes instalado Python pero en otra versión asegurate de que sea 3.9.x para arriba aunque te recomiendo las versiones mas recientes igualmente.
+Para usar esto necesitas tener activado el `Motor De Búsqueda` en qBittorrent, si no lo tienes haz click [![Aquí](https://img.shields.io/badge/🔍_AQUÍ-0052cc?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Gu%C3%ADa-para-habilitar-la-b%C3%BAsqueda-en-qbit) para ver una guía. Si es la primera vez que lo activas, y no tienes Python instalado qBittorrent te pedirá instalar "Python". Simplemente dile que Sí y deja que lo instale automáticamente.
 
-Para una guía más completa de cómo instalar Python haz click [![Aquí](https://img.shields.io/badge/🐍_AQUÍ-3776AB?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Gu%C3%ADa-para-instalar-Python-en-tu-PC)
+Por otra parte para una guía más completa de cómo instalar Python haz click [![Aquí](https://img.shields.io/badge/🐍_AQUÍ-3776AB?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Gu%C3%ADa-para-instalar-Python-en-tu-PC)
 
 **Estos plugins fueron probados en la versión 5.1.4 de qBittorrent, deberían funcionar desde las versiones 4.5.x, 4.6.x en adelante.**
-
-Necesitas tener activado el `Motor De Búsqueda` en qBittorrent, si no lo tienes haz click [![Aquí](https://img.shields.io/badge/🔍_AQUÍ-0052cc?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Gu%C3%ADa-para-habilitar-la-b%C3%BAsqueda-en-qbit) para ver una guía.
 
 Para instalar un plugin correctamente mira esta guía [![Aquí](https://img.shields.io/badge/🧩_AQUÍ-28a745?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Guia-de-instalaci%C3%B3n-de-un-plugin-para-qbit)
 
