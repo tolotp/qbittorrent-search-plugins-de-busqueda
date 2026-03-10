@@ -13,7 +13,7 @@ class goggames(object):
     
     # Nombre limpio, sin el "v11"
     name = 'GOG-Games' 
-    supported_categories = {'all': '0', 'games': '0'} 
+    supported_categories = {'all': '0'} 
 
     def search(self, what, cat='all'):
         ctx = ssl.create_default_context()
