@@ -11,7 +11,6 @@ from novaprinter import prettyPrinter
 class goggames(object):
     url = 'https://gog-games.to'
     
-    # Nombre limpio, sin el "v11"
     name = 'GOG-Games' 
     supported_categories = {'all': '0'} 
 
@@ -22,7 +21,7 @@ class goggames(object):
 
         query_text = urllib.parse.unquote(what).strip().lower()
 
-        # Atajos estéticos
+        # cosa estetica
         if query_text in ['.', '*', '!']:
             endpoint = f"{self.url}/api/web/recent-torrents"
             modo = "NOVEDADES"
