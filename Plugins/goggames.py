@@ -21,7 +21,7 @@ class goggames(object):
 
         query_text = urllib.parse.unquote(what).strip().lower()
 
-        # cosa estetica
+        # cosas estetica
         if query_text in ['.', '*', '!']:
             endpoint = f"{self.url}/api/web/recent-torrents"
             modo = "NOVEDADES"
