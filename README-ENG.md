@@ -1,6 +1,6 @@
 <h1 align="center">IMPORTANT: READ</h1>
 
-To use this you need to have the `Search Engine` enabled in qBittorrent, if you don't have it click [![Here](https://img.shields.io/badge/🔍_HERE-0052cc?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Gu%C3%ADa-para-habilitar-la-b%C3%BAsqueda-en-qbit) to see a guide. Additionally, you must have Python installed on your PC.
+To use this you need to have the `Search Engine` enabled in qBittorrent, if you don't have it click [![Here](https://img.shields.io/badge/🔍_HERE-0052cc?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Gu%C3%ADa-para-activar-el-%22Motor-De-B%C3%BAsqueda%22-en-qBittorrent) to see a guide. Additionally, you must have Python installed on your PC.
 
 For a more complete guide on how to install Python click [![Here](https://img.shields.io/badge/🐍_HERE-3776AB?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Gu%C3%ADa-para-instalar-Python-en-tu-PC)
 
