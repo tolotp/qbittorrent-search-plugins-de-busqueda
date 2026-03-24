@@ -31,4 +31,4 @@ Lee con atención la tabla de plugins en la parte de **"Comentarios"** la `Nota:
 
 **Para saber qué cambios o actualizaciones hay en los plugins visita esta [![Página](https://img.shields.io/badge/📘_Página-0052cc?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Informaci%C3%B3n-esencial) de la [![Wiki](https://img.shields.io/badge/📖_Wiki-6e5494?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki)**
 
-[![Pedido](https://img.shields.io/badge/PEDIDOS-request_a_plugin/Pide_un_plugin-5865F2?style=for-the-badge&logo=github)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/issues/new)
+[![Pedido](https://img.shields.io/badge/PEDIDOS-Pide_un_plugin-5865F2?style=for-the-badge&logo=github)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/issues/new)
