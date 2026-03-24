@@ -25,6 +25,6 @@ Read carefully the plugins table in the **"Comments"** section, specifically the
 **For private trackers it is necessary to make a configuration because most of them require logging in with an account, that's why they must be configured, public trackers generally do not need an account so they are just installed and used without the need to configure them.**
 
 
-**To know what changes or updates are in the plugins visit this [![Page](https://img.shields.io/badge/📘_Page-0052cc?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Informaci%C3%B3n-esencial) of the [![Wiki](https://img.shields.io/badge/📖_Wiki-6e5494?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki)**
+**To know what changes or updates are in the plugins visit this [![Page](https://img.shields.io/badge/📘_Page-0052cc?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Informaci%C3%B3n-esencial/#plugin-information) of the [![Wiki](https://img.shields.io/badge/📖_Wiki-6e5494?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki)**
 
 [![Requests](https://img.shields.io/badge/REQUESTS-request_a_plugin-5865F2?style=for-the-badge&logo=github)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/issues/new)
