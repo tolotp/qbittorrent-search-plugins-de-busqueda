@@ -1,3 +1,7 @@
+> [!NOTE]
+> <h1 align="left"><a href="https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/blob/main/README-ENG.md">:bookmark_tabs: ENGLISH</a></h1>
+
+
 <h1 align="center">IMPORTANTE: LEER</h1>
 
 Para usar esto necesitas tener activado el `Motor De Búsqueda` en qBittorrent, si no lo tienes haz click [![Aquí](https://img.shields.io/badge/🔍_AQUÍ-0052cc?style=flat)](https://github.com/tolotp/qbittorrent-search-plugins-de-busqueda/wiki/Gu%C3%ADa-para-habilitar-la-b%C3%BAsqueda-en-qbit) para ver una guía. Adicionalmente tienes que tener Python instalado en tu PC.
