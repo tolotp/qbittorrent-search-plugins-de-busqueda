@@ -1,4 +1,4 @@
-# VERSION: 1.1
+# VERSION: 1.2
 # AUTHORS: tolotp
 
 import urllib.request
@@ -23,7 +23,7 @@ class ehentai(object):
 
         query = urllib.parse.unquote(what).strip().replace(' ', '+')
         
-        MAX_PAGES = 50     # Límite máximo de páginas
+        MAX_PAGES = 50     # Límite máximo de páginas en la busqueda
         PAGE_DELAY = 4     # Segundos de pausa entre carga de páginas HTML
         API_DELAY = 3      # Segundos de pausa entre consultas a la API
 
