@@ -1,4 +1,4 @@
-# VERSION: 1.0
+# VERSION: 1.2
 # AUTHORS: tolotp
 
 import urllib.parse
@@ -40,49 +40,62 @@ class UindexParser(HTMLParser):
                 link = attr["href"]
                 if link.startswith("magnet:"):
                     self.current_res["link"] = link
-                elif "/details.php" in link:
+                    self.current_item = "name"
+                elif "/details.php" in link or "/torrent/" in link:
                     self.current_res["desc_link"] = self.url + link if link.startswith("/") else link
                     self.current_item = "name"
 
         # Columna 2: Tamaño
-        if self.td_counter == 2 and tag == "td":
-            self.current_item = "size"
+        elif self.td_counter == 2:
+            if tag == "td":
+                self.current_item = "size"
 
-        # Columna 3: Semillas (Seeders)
-        if self.td_counter == 3 and tag == "span" and attr.get("class") == "g":
-            self.current_item = "seeds"
+        # Columna 4: Seeds
+        elif self.td_counter == 4:
+            if tag == "span" and attr.get("class") == "sr-seed":
+                self.current_item = "seeds"
+            elif tag == "td":  
+                self.current_item = "seeds"
 
-        # Columna 4: Leechers
-        if self.td_counter == 4 and tag == "span" and attr.get("class") == "b":
-            self.current_item = "leech"
+        # Columna 5: Leechers
+        elif self.td_counter == 5:
+            if tag == "span" and attr.get("class") == "sr-leech":
+                self.current_item = "leech"
+            elif tag == "td":  
+                self.current_item = "leech"
 
     def handle_data(self, data):
-        if self.current_item and self.in_row:
+        if self.in_row and self.current_item:
             data = data.strip()
-            if data:
-                if self.current_item == "name":
-                    self.current_res["name"] = self.current_res.get("name", "") + data
-                elif self.current_item == "size":
-                    self.current_res["size"] = data
-                elif self.current_item in ["seeds", "leech"]:
-                    self.current_res[self.current_item] = data.replace(",", "")
+            if not data:
+                return
+
+            if self.current_item == "name":
+                self.current_res["name"] = self.current_res.get("name", "") + data
+            elif self.current_item == "size":
+                self.current_res["size"] = data
+                self.current_item = None
+            elif self.current_item == "seeds":
+                self.current_res["seeds"] = data.replace(",", "").replace(".", "")
+                self.current_item = None
+            elif self.current_item == "leech":
+                self.current_res["leech"] = data.replace(",", "").replace(".", "")
+                self.current_item = None
 
     def handle_endtag(self, tag):
-        if tag in ["a", "td", "span"]:
-            self.current_item = None
-            
         if tag == "tr" and self.in_row:
             self.in_row = False
             if "link" in self.current_res and "name" in self.current_res:
                 prettyPrinter(self.current_res)
             self.current_res = {}
+        elif tag == "a" and self.current_item == "name":
+            self.current_item = None
 
 
 class uindex(object):
     url = "https://uindex.org"
     name = "Uindex"
     
-    # Se ajustó "all" para que envíe el 0 como requiere la web
     supported_categories = {
         "all": "0",
         "movies": "1",
@@ -94,16 +107,9 @@ class uindex(object):
     }
 
     def search(self, what: str, cat="all"):
-        # 1. Decodificar el texto que envía qBittorrent (quita los %20)
         what = urllib.parse.unquote(what)
-        
-        # 2. Reemplazar los espacios normales por el signo '+'
         query = what.replace(" ", "+")
-        
-        # 3. Obtener la categoría (por defecto "0" si no se encuentra)
         categ = self.supported_categories.get(cat, "0")
-        
-        # 4. Construir la URL exacta: /search.php?search=palabra+palabra&c=numero
         search_url = f"{self.url}/search.php?search={query}&c={categ}"
 
         try:
@@ -111,9 +117,5 @@ class uindex(object):
             parser = UindexParser(self.url)
             parser.feed(html)
             parser.close()
-            
-        except Exception as e:
-            print(f"Error en la búsqueda de Uindex: {e}")
-
-    def download_torrent(self, info):
-        print(f"{info} {info}")
+        except Exception:
+            pass
